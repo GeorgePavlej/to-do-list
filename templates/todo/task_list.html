@@ -3,7 +3,7 @@
 {% block content %}
   <h1>
     TODO List
-    <a href="{% url 'todo:task-create' %}" class="btn btn-primary link-to-page">
+    <a style="margin-top: 10px " href="{% url 'todo:task-create' %}" class="btn btn-primary float-right">
       Create
     </a>
   </h1>
@@ -12,9 +12,20 @@
 
   {% if task_list %}
     {% for task in task_list %}
-
       <h3>{{ task.content }}</h3>
+      {% if task.progress %}
+        <span style="color:green">Completed</span>
+        <a href="{% url 'todo:task-status' pk=task.id %}" class="btn btn-secondary float-right">
+          Undo
+        </a>
+      {% else %}
+        <span style="color:red">Not done</span>
+        <a href="{% url 'todo:task-status' pk=task.id %}" class="btn btn-success float-right">
+          Complete
+        </a>
+      {% endif %}
       <a>{{ task.created_time }}</a>
+      <a>Deadline: {{ task.deadline }}</a>
       <p>Tags: {% for tag in task.tags.all %}{{ tag.name }} {% endfor %}</p>
       <h1>
         <a href="{% url 'todo:task-delete'  pk=task.id %}" class="btn btn-danger link-to-page">
