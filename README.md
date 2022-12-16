@@ -7,5 +7,11 @@ ___
 - Tracking your progress as you complete tasks
 - Setting goals and working towards them by completing tasks on your to-do list
 
-
-![](../../Desktop/Photo/todo.jpg)![](../../Desktop/Photo/tag create.jpg)![](../../Desktop/Photo/tag delete.jpg)![](../../Desktop/Photo/tag list.jpg)![](../../Desktop/Photo/tag update.jpg)![](../../Desktop/Photo/todo create.jpg)![](../../Desktop/Photo/todo delete.jpg)![](../../Desktop/Photo/todo update.jpg)
+![](demo_images/tag create.jpg)
+![](demo_images/tag delete.jpg)
+![](demo_images/tag list.jpg)
+![](demo_images/tag update.jpg)
+![](demo_images/todo.jpg)
+![](demo_images/todo create.jpg)
+![](demo_images/todo delete.jpg)
+![](demo_images/todo update.jpg)
